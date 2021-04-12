@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'absa_app.apps.AbsaAppConfig',
 ]
 
 MIDDLEWARE = [
