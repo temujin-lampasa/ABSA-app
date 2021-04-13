@@ -22,10 +22,16 @@
 			</header>
 
 		<!-- Signup Form -->
-			<form id="signup-form" method="post" action="#">
-				<input type="text" name="link" id="link" placeholder="Link" />
-				<input type="submit" value="Enter" />
+			<form id="signup-form" method="POST" action="">
+                {% csrf_token %}
+                {{ form }}
+				<input type="submit" value="Enter"/>
+
+                <!-- {% if response %} -->
+                <span class="message success">{{response}}</span>
+                <!-- {% endif %} -->
 			</form>
+
 
 		<!-- Footer -->
 			<footer id="footer">

@@ -1,5 +1,4 @@
 from django import forms
 
 class VideoLinkForm(forms.Form):
-    viideo_link = forms.CharField(label="Link:", max_length=100)
-    
+    video_link = forms.CharField(label='', max_length=100, widget=forms.TextInput(attrs={'placeholder': 'Link'}))
